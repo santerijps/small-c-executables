@@ -9,7 +9,7 @@ or if possible, use `TCC`.
 
 ```shell
 gcc -Os -s -fno-ident -fno-asynchronous-unwind-tables -o out.exe hello_crossplatform.c
-upx --best --lzma --ultra-brute -f --compress-icons=3 -o out.compressed.exe out.exe
+upx --best --lzma --ultra-brute -f --compress-icons=3 --8-bit --no-reloc --no-align -q -o out.compressed.exe out.exe
 ```
 
 ### With `TCC`
